@@ -21,5 +21,16 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="libs/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="libs/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="libs/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="libs/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="libs/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="libs/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="libs/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="libs/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="libs/SaxonLiaison.jar"/>
+	<classpathentry kind="lib" path="libs/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JavaSelenium3Test" default="test" basedir="">
+    <target name="test">
+        <echo message="test echo message,basedir=${basedir}"/>
+     </target>
+ </project>
+        
