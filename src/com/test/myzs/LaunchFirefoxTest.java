@@ -2,7 +2,9 @@ package com.test.myzs;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -32,6 +34,10 @@ public class LaunchFirefoxTest {
         driver.get("https://www.baidu.com");  
         //getTitle()获取当前页面title的值  
         System.out.println("当前打开页面的标题是： "+ driver.getTitle());  
+        
+        WebElement searchBox =driver.findElement(By.id("kw"));
+        searchBox.sendKeys("test");
+        searchBox.submit();
           
         //关闭并退出浏览器  
      //   driver.quit();  

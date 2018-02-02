@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -22,7 +24,7 @@ public class Read_XLS {
     	this.filelocation=filelocation;
     	ipstr=new FileInputStream(filelocation);
     	wb=new HSSFWorkbook(ipstr);
-    	ws=wb.getSheetAt(0);//从第一行读取,表格索引从0开始
+    	ws=wb.getSheetAt(0);//从第一行读取,表格索引从0开始,得到Excel工作表对象   
     	ipstr.close();//关闭文件
     	
     	
@@ -49,7 +51,7 @@ public class Read_XLS {
     	
     }
     
-    //读取检索文件sheets行数
+    //读取检索文件sheets列数
     public int retrieveNoOfCols(String wsName){
     	int sheetIndex=wb.getSheetIndex(wsName);
         if(sheetIndex==-1)
@@ -66,6 +68,62 @@ public class Read_XLS {
     	
     }
   //读取测试套件和测试用例的SuiteToRun and CaseToRun标志
+    /*
+    public String retrieveToRunFlag(String wsName, String colName, String rowName){
+    	int sheetIndex=wb.getSheetIndex(wsName);
+    	if(sheetIndex==-1){
+    		return null;		
+    	}
+    	else {
+			int rowNum=retrieveNoOfRows(wsName);
+			int colNum=retrieveNoOfCols(wsName);
+			int colNumber=-1;
+            int rowNumber=-1;
+            HSSFRow Suiterow = ws.getRow(0);
+            for(int i=0;i<colNum;i++){
+            	if(Suiterow.getCell(i).getStringCellValue().equals(colName.trim())){
+                    colNumber=i;                    
+                }     
+            	
+            	
+            	
+            	
+            }
+            
+			
+		}
+		
+    	
+    	
+    	
+    	
+    }
+    */
+    //从测试用例数据sheets读取测试数据
+    public Object[][] retrieveTestData(String wsName){
+    	int sheetIndex=wb.getSheetIndex(wsName);
+    	if(sheetIndex==-1){
+    		
+    		return null;
+    	}
+    	else{
+    		
+    		int rowNum=retrieveNoOfRows(wsName);
+    		int colNum=retrieveNoOfCols(wsName);
+    		Object data[][]=new Object[rowNum-1][colNum-2];
+    		List<String[]> list=new ArrayList<String[]>();
+    		for(int i=0;i<rowNum-1;i++){
+    			HSSFRow row = ws.getRow(i+1);
+    			
+    			
+    			
+    		}
+    		
+    		return null;
+    	}
+    	
+    	
+    }
     
 
 
