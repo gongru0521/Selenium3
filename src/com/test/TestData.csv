@@ -1,0 +1,5 @@
+"元素信息;元素类型(id,xpath,name,class,tag,link,css,TagName,Jquery);动作(edit,scroll,click);断言信息;停留时间;用例名称"
+//*[@id='topbar']/div/div[2]/div[2]/a[2];xpath;click;登录;1000;点击登录按钮
+//*[@id='username'];xpath;edit;null;1000;输入手机号;18638732236
+//*[@id='password'];xpath;edit;null;1000;输入密码;111111
+//*[@id='登录'];xpath;click;会员中心;1000;登录账号

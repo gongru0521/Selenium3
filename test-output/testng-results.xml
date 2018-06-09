@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14" started-at="2018-06-09T02:21:30Z" finished-at="2018-06-09T02:21:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14" started-at="2018-06-09T02:21:30Z" finished-at="2018-06-09T02:21:30Z">
+      <class name="com.test.SuiteTwo.ColleTest">
+        <test-method status="PASS" signature="testset()[pri:0, instance:com.test.SuiteTwo.ColleTest@50675690]" name="testset" duration-ms="7" started-at="2018-06-09T10:21:30Z" finished-at="2018-06-09T10:21:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testset -->
+      </class> <!-- com.test.SuiteTwo.ColleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
