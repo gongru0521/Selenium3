@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.myzs.LaunchFirefoxTest">
+      <class name="com.test.myzs.SeleniumDemo">
         <methods>
-          <include name="test002"/>
+          <include name="test003"/>
+          <include name="test001"/>
           <include name="waitsleep"/>
         </methods>
-      </class> <!-- com.test.myzs.LaunchFirefoxTest -->
+      </class> <!-- com.test.myzs.SeleniumDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
